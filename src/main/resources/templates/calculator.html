@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #d87093;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #d87093;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #d87093;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff7f9c;
+        }
+    </style>
+</head>
+<body>
+<h1>Калькулятор</h1>
+<form action="/calculate" method="post">
+    <input type="text" name="expression" placeholder="Введіть вираз (наприклад, 2+2*2)">
+    <button type="submit">Розрахувати</button>
+</form>
+</body>
+</html>
